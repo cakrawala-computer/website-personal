@@ -1,0 +1,300 @@
+/*....HEADER_STYLE..../*
+/* Pastikan nama class sesuai dengan yang ada di HTML kamu */
+    .brand-container {
+        display: flex;
+        align-items: center; /* Membuat logo dan teks sejajar vertikal di tengah */
+        gap: 12px;           /* Memberi jarak antara logo dan teks */
+        text-decoration: none;
+    }
+
+/* --- PERBAIKAN NAVBAR AGAR LEBIH BESAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* Mengatur tinggi navbar melalui padding (Atas-Bawah 30px, Kiri-Kanan 8%) */
+    padding: 30px 8%; 
+    
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Bayangan lebih tebal agar terlihat timbul */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Menyesuaikan ukuran Logo agar tidak kekecilan di dalam Navbar yang besar */
+.brand-container img {
+    height: 60px; /* Diperbesar dari kodingan sebelumnya */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Menyesuaikan ukuran Teks Menu */
+.nav-links a {
+    font-size: 18px; /* Huruf diperbesar agar jelas */
+    font-weight: 700; /* Menebalkan huruf sesuai permintaan sebelumnya */
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+    .brand-container img {
+        height: 70px;        /* Atur tinggi logo agar mengecil (sesuaikan angka ini) */
+        width: auto;         /* Agar rasio gambar tetap proporsional */
+        display: block;
+    }
+    .logo-text{
+        font-size:22px;
+        font-weight:600;
+        color:#ff0000;
+    }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f8f9fa; color: #333; }
+
+        /* Navigation Bar */
+        .navbar {
+            background: #dff6fd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 13px 3%;
+            box-shadow: 0 4px 12px rgba(235, 7, 7, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo { font-size: 24px; font-weight: 600; color: #4facfe; }
+        .nav-links { list-style: none; display: flex; gap: 20px; margin:0; padding:0; align-items: center;}
+        .nav-links a { text-decoration: none; color: #555; font-weight: 400; transition: 0.3s; }
+        .nav-links a:hover { color: #4facfe; }
+
+        /* Hero Section */
+        .hero {
+        /* Background dan tata letak teks */
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('../img/LOGO BACKGOUND GAMBAR.jpg');
+        background-size: cover;
+        background-position: center;
+        
+        /* Ukuran Kotak yang Mengecil */
+        margin: 5px 5px;      /* 20px jarak atas-bawah, 40px jarak kiri-kanan */
+        width: auto;            /* Agar lebar kotak otomatis berkurang karena margin */
+        height: 300px;          /* Tentukan tinggi kotak */
+        
+        /* Membuat tampilan lebih profesional */
+        border-radius: 15px;    /* Membuat sudut kotak melengkung */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Memberi bayangan agar terlihat timbul */
+    }
+
+    /* Tambahan agar tulisan tidak mepet ke pinggir kotak yang sudah mengecil */
+    .hero h1, .hero p {
+        padding: 0 20px;
+    }
+            
+/* Menargetkan judul "Beranda" di dalam kontainer layanan */
+.services-container h2 {
+    text-align: center;       /* Membuat teks ke tengah secara horizontal */
+    font-size: 30px;          /* Ukuran huruf agar terlihat tegas */
+    font-weight: 600;         /* Menebalkan huruf (Extra Bold) */
+    margin-top: 40px;         /* Jarak dari bagian Hero di atasnya */
+    margin-bottom: 30px;      /* Jarak dari grid gambar di bawahnya */
+    color: #333;              /* Warna teks abu gelap agar elegan */
+    position: relative;
+    text-transform: capitalize; /* Membuat satu huruf besar (opsional) */
+    letter-spacing: 2px;      /* Memberi jarak antar huruf agar rapi */
+}
+
+/* Tambahan: Garis kecil di bawah tulisan Beranda agar lebih manis */
+.services-container h2::after {
+    content: '';
+    display: block;
+    width: 600px;              /* Panjang garis */
+    height: 1px;              /* Tebal garis */
+    background: #1a1616;      /* Warna garis */
+    margin: 10px auto 0;      /* Garis otomatis ke tengah */
+    border-radius: 2px;
+}
+
+/* Menargetkan teks konsultasi di bawah judul Beranda */
+.services-container p {
+    text-align: center;       /* Membuat teks berada di tengah */
+    font-size: 18px;          /* Ukuran huruf agar proporsional */
+    color: #666;              /* Warna abu-abu agar tidak terlalu dominan */
+    margin-top: -25px;        /* Menarik teks sedikit lebih dekat ke judul Beranda */
+    margin-bottom: 30px;      /* Memberi jarak dengan grid gambar di bawahnya */
+    font-weight: 500;         /* Ketebalan sedang agar rapi */
+    line-height: 1.6;         /* Memberi ruang antar baris */
+}
+    
+    .services {
+        padding: 10px 1%; /* Hanya sisa 1% di kiri dan kanan agar hampir full screen */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .services-grid-custom {
+        display: grid;
+        gap: 10px; /* Jarak antar foto kecil saja */
+        grid-template-columns: 2fr 1fr 1fr; /* Kolom 1 lebar, kolom 2 & 3 sempit */
+        grid-template-rows: 450px; /* Tinggi kotak grid */
+        width: 100%;
+    }
+
+    .grid-item {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 450px
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Penting! Agar gambar tidak gepeng */
+        transition: transform 0.5s;
+    }
+
+    /* Efek zoom saat gambar didekati mouse */
+    .grid-item:hover img {
+        transform: scale(1.1);
+    }
+
+/* Mengatur Overlay agar Teks Muncul di Atas Gambar */
+.overlay {
+    position: absolute;       /* Kunci agar teks bisa menempel di atas gambar */
+    bottom: 0;                /* Meletakkan teks di bagian bawah gambar */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Warna hitam transparan agar teks terbaca */
+    color: white;             /* Warna teks jadi putih agar kontras */
+    padding: 20px;            /* Memberi ruang napas agar teks tidak mepet */
+    text-align: left;         /* Rata kiri sesuai desain awalmu */
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+/* Mengatur Judul di Dalam Gambar */
+.overlay h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Mengatur Deskripsi di Dalam Gambar */
+.overlay p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #ddd;              /* Warna abu muda agar rapi */
+    text-align: left;
+    padding-left: 0px
+}
+
+/* Efek Hover: Overlay sedikit naik saat gambar didekati */
+.grid-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    padding-bottom: 30px;
+}
+
+/* Responsif untuk HP: Jadi tumpuk ke bawah semua */
+@media (max-width: 768px) {
+    .services-grid-custom {
+        grid-template-columns: 1fr; /* Jadi satu kolom saja di HP */
+        grid-template-rows: auto;
+    }
+    .grid-item {
+        height: 250px; /* Tinggi di layar HP */
+    }
+}
+
+
+/* --- FOOTER STYLES --- */
+.main-footer {
+    background-color: #c1ecfa; /* Warna gelap agar kontras */
+    color: white;
+    padding: 40px 10%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Jarak antar ikon sosial media */
+    margin-bottom: 30px;
+}
+
+.social-item {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center; /* Ikon dan teks sejajar vertikal */
+    transition: 0.3s;
+}
+
+.social-item i {
+    margin-right: 10px; /* Jarak ikon di samping teks */
+    font-size: 20px;
+}
+
+/* Efek warna saat mouse di atas link */
+.social-item:hover {
+    color: #4facfe; /* Warna biru muda saat di-hover */
+    transform: translateY(-3px);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar ikon */
+    margin-bottom: 20px;
+}
+
+.social-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600; /* Menebalkan teks sesuai keinginanmu sebelumnya */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Jarak antara gambar ikon dan teksnya */
+}
+
+.social-item i {
+    font-size: 20px; /* Ukuran ikon */
+}
+
+/* Warna khusus saat hover agar lebih keren */
+.social-item:hover { color: #4facfe; }
+
+.copyright {
+    /* Menentukan panjang garis (misal hanya 50% dari lebar layar) */
+    width: 60%; 
+    
+    /* Membuat garis berada di tengah */
+    margin: 20px auto 0; 
+    
+    /* Mengatur ketebalan dan warna garis */
+    border-top: 1px solid #ccc; 
+    
+    /* Jarak antara teks dengan garis di atasnya */
+    padding-top: 20px; 
+    
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
